@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+	<title>游玩 - PhiCommunity</title>
+	<script src="https://b.alicdn.com/s/polyfill.js"></script>
+	<script src="./assets/createImageBitmap.js"></script>
+	<!-- EMM, 第三方的createImageBitmap那个似乎有Bug（） -->
+	<!-- <script src="//cdn.jsdelivr.net/gh/Kaiido/createImageBitmap@master/dist/createImageBitmap.js"></script> -->
+	<!-- <script src="//cdn.jsdelivr.net/gh/gildas-lormeau/zip.js@master/dist/zip.min.js"></script> -->
+	<!-- <script src="//cdn.jsdelivr.net/gh/flozz/StackBlur@master/dist/stackblur.min.js"></script> -->
+	<!-- <script src="//cdn.jsdelivr.net/gh/hapjs/md5-js@master/md5.min.js"></script> -->
+</head>
+
+<body>
+	<canvas id="canvas" class="canvas fade"></canvas>
+	<input id="btn-play" class="hide" type="button" value="播放" />
+	<div class="pauseOverlay" id="pauseOverlay">
+		<div id="backInPlayingBtn" id="backInPlayingBtn"></div>
+		<div id="restartBtn"></div>
+		<div id="resumeBtn"></div>
+	</div>
+	<!--
+	<div class="tapToStartFrame">
+		<div class="songName">SampleChart-1</div>
+		<div class="judgeLine"></div>
+		<div class="detail">
+			Illustration designed by Yuameshi
+			Level designed by Yuameshi
+		</div>
+	</div> 
+	-->
+	<div class="hide">
+		<!-- <div>谱面：<select id="select-chart" style="width: 6em"></select></div> -->
+		<!-- <div>音乐：<select id="select-bgm" style="width: 6em"></select></div> -->
+		<!-- <div>图片：<select id="select-bg" style="width: 6em"></select></div> -->
+		<select id="select-aspect-ratio">
+			<option value="1.25"></option>
+			<option value="1.333333"></option>
+			<option value="1.428571"></option>
+			<option value="1.461538"></option>
+			<option value="1.6"></option>
+			<option value="1.666667"></option>
+			<option value="1.692308"></option>
+			<option value="1.777778" selected></option>
+		</select>
+		<select id="select-scale-ratio">
+			<option value="1e4"></option>
+			<option value="9e3"></option>
+			<option value="8e3" selected></option>
+			<option value="7e3"></option>
+			<option value="6e3"></option>
+		</select>
+		<select id="select-global-alpha">
+			<option value="1"></option>
+			<option value="0.8"></option>
+			<option value="0.6" selected></option>
+			<option value="0.4"></option>
+			<option value="0.2"></option>
+		</select>
+		<input id="input-name" class="input" />
+		<input id="input-level" class="input" />
+		<input id="input-illustrator" class="input" />
+		<input id="input-designer" class="input" />
+		<input type="checkbox" id="feedback" />
+		<input type="checkbox" id="imageBlur" checked />
+		<input type="checkbox" id="highLight" checked />
+		<input type="checkbox" id="hitSong" checked />
+		<input type="checkbox" id="lineColor" />
+		<input type="checkbox" id="showPoint" />
+		<input type="checkbox" id="autoplay">
+		<input type="checkbox" id="hyperMode" />
+		<input type="checkbox" id="showTransition" checked />
+		<input id="input-offset" type="number" />
+		<input id="btn-play" type="button" />
+		<input id="btn-pause" type="button" />
+	</div>
+	<!-- <script src="./script.phi.community.core.js"></script> -->
+</body>
+
+</html>
