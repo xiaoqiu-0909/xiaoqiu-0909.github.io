@@ -1,0 +1,50 @@
+{
+	"name": "phi-community",
+	"version": "1.0.0",
+	"description": "A community driven project to make a game like phigros.",
+	"author": "Yuameshi",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Yuameshi/PhiCommunity.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack serve --config ./config/webpack.dev.js --open",
+		"watch": "webpack --config ./config/webpack.prod.js --watch",
+		"build": "webpack --config ./config/webpack.prod.js",
+		"build:cf": "npm run build  -- --env charts-source=\"https://cf.charts.phicommunity.com.cn\"",
+		"build:vercel": "npm run build  -- --env charts-source=\"https://vercel.charts.phicommunity.com.cn\""
+	},
+	"bugs": {
+		"url": "https://github.com/Yuameshi/PhiCommunity/issues"
+	},
+	"homepage": "https://github.com/Yuameshi/PhiCommunity#readme",
+	"devDependencies": {
+		"clean-webpack-plugin": "^4.0.0",
+		"copy-webpack-plugin": "^10.2.4",
+		"css-loader": "^6.6.0",
+		"eslint": "^8.13.0",
+		"file-loader": "^6.2.0",
+		"git-revision-webpack-plugin": "^5.0.0",
+		"html-loader": "^3.1.0",
+		"html-webpack-plugin": "^5.5.0",
+		"mini-css-extract-plugin": "^2.6.0",
+		"string-replace-loader": "^3.1.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.69.1",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.7.4",
+		"webpack-merge": "^5.8.0",
+		"workbox-webpack-plugin": "^6.5.1"
+	},
+	"dependencies": {
+		"dom-element-factory": "^1.5.0",
+		"oggmented": "^1.0.1",
+		"stackblur-canvas": "^2.5.0",
+		"workbox-core": "^6.5.1",
+		"workbox-precaching": "^6.5.1",
+		"workbox-routing": "^6.5.1",
+		"workbox-strategies": "^6.5.1"
+	}
+}
