@@ -4,7 +4,7 @@ const urls = {
 	zip: ["//cdn.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js", "//fastly.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js"],
 	browser: ["//cdn.jsdelivr.net/gh/mumuy/browser/Browser.js", "//fastly.jsdelivr.net/gh/mumuy/browser/Browser.js", "//passer-by.com/browser/Browser.js"],
 	bitmap: ["//cdn.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js", "//fastly.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js"],
-	blur: ["//cdn.jsdelivr.net/npm/stackblur-canvas", "//fastly.jsdelivr.net/npm/stackblur-canvas"],
+	blur: ["//fastly.jsdelivr.net/npm/stackblur-canvas", "//cdn.jsdelivr.net/npm/stackblur-canvas"],
 	md5: ["//cdn.jsdelivr.net/npm/md5-js", "//fastly.jsdelivr.net/npm/md5-js"],
 }
 document.oncontextmenu = e => e.preventDefault(); //qwq
