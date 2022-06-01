@@ -1,11 +1,11 @@
 "use strict";
 const _i = ['Phigros模拟器', [1, 4, 17], 1611795955, 1651457632];
 const urls = {
-	zip: ["//cdn.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js", "//fastly.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js"],
-	browser: ["//cdn.jsdelivr.net/gh/mumuy/browser/Browser.js", "//fastly.jsdelivr.net/gh/mumuy/browser/Browser.js", "//passer-by.com/browser/Browser.js"],
-	bitmap: ["//cdn.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js", "//fastly.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js"],
+	zip: ["//fastly.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js", "//cdn.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js"],
+	browser: ["//fastly.jsdelivr.net/gh/mumuy/browser/Browser.js", "//cdn.jsdelivr.net/gh/mumuy/browser/Browser.js", "//passer-by.com/browser/Browser.js"],
+	bitmap: ["//fastly.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js", "//cdn.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js"],
 	blur: ["//fastly.jsdelivr.net/npm/stackblur-canvas", "//cdn.jsdelivr.net/npm/stackblur-canvas"],
-	md5: ["//cdn.jsdelivr.net/npm/md5-js", "//fastly.jsdelivr.net/npm/md5-js"],
+	md5: ["//fastly.jsdelivr.net/npm/md5-js", "//cdn.jsdelivr.net/npm/md5-js"],
 }
 document.oncontextmenu = e => e.preventDefault(); //qwq
 for (const i of document.getElementById("view-nav").children) {
