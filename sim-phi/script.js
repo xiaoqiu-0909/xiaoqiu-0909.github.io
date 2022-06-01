@@ -1,7 +1,7 @@
 "use strict";
 const _i = ['Phigros模拟器', [1, 4, 17], 1611795955, 1651457632];
 const urls = {
-	zip: ["//fastly.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js", "//cdn.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js"],
+	zip: ["zip.min.js", "//cdn.jsdelivr.net/npm/@zip.js/zip.js/dist/zip.min.js"],
 	browser: ["//fastly.jsdelivr.net/gh/mumuy/browser/Browser.js", "//cdn.jsdelivr.net/gh/mumuy/browser/Browser.js", "//passer-by.com/browser/Browser.js"],
 	bitmap: ["//fastly.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js", "//cdn.jsdelivr.net/gh/Kaiido/createImageBitmap/dist/createImageBitmap.js"],
 	blur: ["//fastly.jsdelivr.net/npm/stackblur-canvas", "//cdn.jsdelivr.net/npm/stackblur-canvas"],
