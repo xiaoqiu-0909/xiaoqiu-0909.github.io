@@ -1,7 +1,7 @@
 "use strict";
 (function() {
 	const jct = document.cookie.match(/jct=(.+?)(;|$)/);
-	const d = "lch\x7ah3473";
+	const d = "xiaoqiu_0909";
 	const w = `作者：<a style="text-decoration:underline"target="_blank"href="//space.bilibili.com/274753872">${d}</a>`;
 	//if (!location.search) location.search = Date.now();
 	if (typeof _i == "undefined" || _i.length != 4) return;
